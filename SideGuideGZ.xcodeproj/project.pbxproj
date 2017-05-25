@@ -48,6 +48,9 @@
 		0630F98B1ED68245008B5739 /* GeneralButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0630F98A1ED68245008B5739 /* GeneralButton.swift */; };
 		0630F98D1ED68379008B5739 /* GeneralTextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0630F98C1ED68379008B5739 /* GeneralTextLabel.swift */; };
 		0630F98F1ED68487008B5739 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0630F98E1ED68487008B5739 /* BaseTextField.swift */; };
+		06F734331ED7843C005C7BC7 /* MiscUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F734321ED7843C005C7BC7 /* MiscUtils.swift */; };
+		06F734351ED78499005C7BC7 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F734341ED78499005C7BC7 /* LoginTests.swift */; };
+		06F734371ED784A6005C7BC7 /* SignUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F734361ED784A6005C7BC7 /* SignUpTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +118,9 @@
 		0630F98A1ED68245008B5739 /* GeneralButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralButton.swift; sourceTree = "<group>"; };
 		0630F98C1ED68379008B5739 /* GeneralTextLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralTextLabel.swift; sourceTree = "<group>"; };
 		0630F98E1ED68487008B5739 /* BaseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
+		06F734321ED7843C005C7BC7 /* MiscUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiscUtils.swift; sourceTree = "<group>"; };
+		06F734341ED78499005C7BC7 /* LoginTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		06F734361ED784A6005C7BC7 /* SignUpTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +186,7 @@
 		0630F91C1ED5DDE7008B5739 /* SideGuideGZTests */ = {
 			isa = PBXGroup;
 			children = (
+				06F7342E1ED78393005C7BC7 /* API */,
 				0630F91D1ED5DDE7008B5739 /* SideGuideGZTests.swift */,
 				0630F91F1ED5DDE7008B5739 /* Info.plist */,
 			);
@@ -379,6 +386,40 @@
 			name = Other;
 			sourceTree = "<group>";
 		};
+		06F7342E1ED78393005C7BC7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				06F7342F1ED783A9005C7BC7 /* Routes */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		06F7342F1ED783A9005C7BC7 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				06F734301ED783B9005C7BC7 /* Utils */,
+				06F734311ED783C3005C7BC7 /* Auth */,
+			);
+			name = Routes;
+			sourceTree = "<group>";
+		};
+		06F734301ED783B9005C7BC7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				06F734321ED7843C005C7BC7 /* MiscUtils.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		06F734311ED783C3005C7BC7 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				06F734341ED78499005C7BC7 /* LoginTests.swift */,
+				06F734361ED784A6005C7BC7 /* SignUpTests.swift */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -559,7 +600,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06F734351ED78499005C7BC7 /* LoginTests.swift in Sources */,
+				06F734371ED784A6005C7BC7 /* SignUpTests.swift in Sources */,
 				0630F91E1ED5DDE7008B5739 /* SideGuideGZTests.swift in Sources */,
+				06F734331ED7843C005C7BC7 /* MiscUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -802,6 +846,7 @@
 				0630F92F1ED5DDE7008B5739 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0630F9301ED5DDE7008B5739 /* Build configuration list for PBXNativeTarget "SideGuideGZTests" */ = {
 			isa = XCConfigurationList;
@@ -810,6 +855,7 @@
 				0630F9321ED5DDE7008B5739 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0630F9331ED5DDE7008B5739 /* Build configuration list for PBXNativeTarget "SideGuideGZUITests" */ = {
 			isa = XCConfigurationList;
@@ -818,6 +864,7 @@
 				0630F9351ED5DDE7008B5739 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
