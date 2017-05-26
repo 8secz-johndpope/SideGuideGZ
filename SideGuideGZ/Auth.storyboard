@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,10 +23,70 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="zwK-Px-evq" kind="show" identifier="ToQuestions" id="XDO-v9-o9m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EZe-rr-zPW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-15" y="10"/>
+            <point key="canvasLocation" x="-76" y="9"/>
+        </scene>
+        <!--Base Navigation Controller-->
+        <scene sceneID="jq5-1G-4om">
+            <objects>
+                <navigationController storyboardIdentifier="SetDefaultQuestionsNav" id="zwK-Px-evq" customClass="BaseNavigationController" customModule="SideGuideGZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rJa-C0-Jdm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zMB-TI-aQp" kind="relationship" relationship="rootViewController" id="gDo-xO-46r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dlw-ct-yuh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="716" y="9"/>
+        </scene>
+        <!--Questions-->
+        <scene sceneID="N4P-J5-pCd">
+            <objects>
+                <viewController storyboardIdentifier="SetDefaultQuestions" id="zMB-TI-aQp" customClass="SetDefaultQuestionsViewController" customModule="SideGuideGZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ojQ-bI-mlK"/>
+                        <viewControllerLayoutGuide type="bottom" id="loT-Fm-eUG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1ag-Pv-Nn2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMi-0r-cxY" customClass="SelectorManager" customModule="SideGuideGZ" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="wMi-0r-cxY" secondAttribute="trailing" constant="-16" id="4Bw-aa-wpy"/>
+                            <constraint firstItem="wMi-0r-cxY" firstAttribute="top" secondItem="ojQ-bI-mlK" secondAttribute="bottom" id="I1I-GK-BTy"/>
+                            <constraint firstItem="loT-Fm-eUG" firstAttribute="top" secondItem="wMi-0r-cxY" secondAttribute="bottom" id="Y3H-Ri-K5N"/>
+                            <constraint firstItem="wMi-0r-cxY" firstAttribute="leading" secondItem="1ag-Pv-Nn2" secondAttribute="leadingMargin" constant="-16" id="Z1r-D8-r6D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Questions" id="AXS-QR-kj4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="11A-p6-Iwg">
+                            <connections>
+                                <action selector="cancelPressed:" destination="zMB-TI-aQp" id="htv-T5-3rG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cancelButton" destination="11A-p6-Iwg" id="Y5j-1r-iFj"/>
+                        <outlet property="selectorManager" destination="wMi-0r-cxY" id="O3C-8K-T1G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kN9-bC-gwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1498.4000000000001" y="8.5457271364317844"/>
         </scene>
     </scenes>
 </document>

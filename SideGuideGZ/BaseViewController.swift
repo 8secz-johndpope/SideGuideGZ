@@ -20,12 +20,7 @@ class BaseViewController: UIViewController, CrowdismaVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = DesignConstants.THEME_BACKGROUND
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        view.backgroundColor = DesignConstants.THEME_GRAY
     }
     
     func displayLoginSignUp() {
@@ -42,5 +37,9 @@ class BaseViewController: UIViewController, CrowdismaVC {
     lazy var _marginSmall: CGFloat = {
         return UIScreen.main.bounds.size.height * LayoutConstants.SMALL_MARGIN_PROP
     }()
+    
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return DesignConstants.STATUS_BAR_STYLE
+    }
 
 }

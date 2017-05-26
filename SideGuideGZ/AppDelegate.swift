@@ -16,11 +16,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        setDefaultUI()
         let storyboardIdentifier = "Auth" // would check if the token is saved
         let vc = UIStoryboard(name: storyboardIdentifier, bundle: nil).instantiateInitialViewController()
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
         return true
+    }
+    
+    fileprivate func setDefaultUI() {
+        UINavigationBar.appearance().barTintColor = DesignConstants.THEME_PRIMARY
+        UINavigationBar.appearance().tintColor = DesignConstants.THEME_BACKGROUND
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : DesignConstants.THEME_BACKGROUND, NSFontAttributeName : FontConstants.THEME_NAV_BAR]
+        UINavigationBar.appearance().isTranslucent = false
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

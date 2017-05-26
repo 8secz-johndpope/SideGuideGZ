@@ -208,27 +208,42 @@ class SignUpLoginViewController: BaseViewController, UITextFieldDelegate {
             
             ThreadingConstants.GlobalMainQueue.async(execute: {
                 self.hardClose()
-                if let err = error {
-                    self.addErrorPopup(err, hardOpen: true, completion: {
-                        var textFieldToChange: UITextField? = nil
-                        if err == Error.sign_UP_EMAIL_EXISTS ||
-                            err == Error.sign_UP_INVALID_EMAIL ||
-                            err == Error.login_INVALID_EMAIL {
-                            textFieldToChange = self.emailTextField
-                            
-                        } else if err == Error.login_WRONG_PASSWORD {
-                            textFieldToChange = self.passwordTextField
-                        } else if err == Error.sign_UP_USERNAME_EXISTS {
-                            textFieldToChange = self.usernameTextField
-                        }
-                        if textFieldToChange != nil {
-                            textFieldToChange!.becomeFirstResponder()
-                            textFieldToChange!.selectedTextRange = textFieldToChange!.textRange(
-                                from: textFieldToChange!.beginningOfDocument, to: textFieldToChange!.endOfDocument
-                            )
-                        }
-                    })
+                
+                if self.isSignup {
+                    self.performSegue(withIdentifier: "ToQuestions", sender: self)
+                } else {
+                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()!
+                    self.present(vc, animated: true, completion: nil)
                 }
+                
+//                if let err = error {
+//                    self.addErrorPopup(err, hardOpen: true, completion: {
+//                        var textFieldToChange: UITextField? = nil
+//                        if err == Error.sign_UP_EMAIL_EXISTS ||
+//                            err == Error.sign_UP_INVALID_EMAIL ||
+//                            err == Error.login_INVALID_EMAIL {
+//                            textFieldToChange = self.emailTextField
+//                            
+//                        } else if err == Error.login_WRONG_PASSWORD {
+//                            textFieldToChange = self.passwordTextField
+//                        } else if err == Error.sign_UP_USERNAME_EXISTS {
+//                            textFieldToChange = self.usernameTextField
+//                        }
+//                        if textFieldToChange != nil {
+//                            textFieldToChange!.becomeFirstResponder()
+//                            textFieldToChange!.selectedTextRange = textFieldToChange!.textRange(
+//                                from: textFieldToChange!.beginningOfDocument, to: textFieldToChange!.endOfDocument
+//                            )
+//                        }
+//                    })
+//                } else {
+//                    if self.isSignup {
+//                        self.performSegue(withIdentifier: "ToQuestions", sender: self)
+//                    } else {
+//                        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()!
+//                        self.present(vc, animated: true, completion: nil)
+//                    }
+//                }
             })
         }
         
@@ -305,10 +320,6 @@ class SignUpLoginViewController: BaseViewController, UITextFieldDelegate {
         super.touchesBegan(touches, with: event)
         moveLogo(moveOn: true)
         view.endEditing(true)
-    }
-
-    override var preferredStatusBarStyle : UIStatusBarStyle {
-        return UIStatusBarStyle.lightContent
     }
     
 }

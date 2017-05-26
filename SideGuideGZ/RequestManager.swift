@@ -26,6 +26,10 @@ class RequestManager {
 
     var currentUser: User? = nil
     
+    func getTokenizedURL(_ url: String) -> String {
+        return APIConstants.BASE_URL + url + "?token=" + self.token!
+    }
+    
     func getTokenFromDataStore()->String? {
         guard !triedInternalDataStoreForToken else { return nil }
         foundToken = Foundation.UserDefaults.standard.object(forKey: UserDefaults.TOKEN) as? String
@@ -42,7 +46,23 @@ class RequestManager {
         }
         let task = URLSession.shared.dataTask(with: request, completionHandler: { (responseData, response, serverError) -> Void in
             var err: Error? = nil
-            if let data = RequestManager.parseJSONAndInspectForError(data: responseData, response: response, vc: vc, serverError: serverError as NSError?, error: &err) {
+            if let data = self.parseJSONAndInspectForError(data: responseData, response: response, vc: vc, serverError: serverError as NSError?, error: &err) {
+                completion(err, data)
+            } else {
+                completion(err ?? Error.unknown_ERROR, nil)
+            }
+        }) ; task.resume()
+    }
+    
+    func runGet(url: URLUsable, headers: [String : String], vc: CrowdismaVC?, completion: @escaping ERROR_DATA_COMP) {
+        let mutableRequest = url.getURLRequestWithMethod()
+        for (field, value) in headers {
+            mutableRequest.setValue(value, forHTTPHeaderField: field)
+        }
+        let request = url.convertMutableURLRequest(mutableRequest: mutableRequest)
+        let task = URLSession.shared.dataTask(with: request, completionHandler: { (responseData, response, serverError) in
+            var err: Error? = nil
+            if let data = self.parseJSONAndInspectForError(data: responseData, response: response, vc: vc, serverError: serverError as NSError?, error: &err) {
                 completion(err, data)
             } else {
                 completion(err ?? Error.unknown_ERROR, nil)
@@ -50,7 +70,7 @@ class RequestManager {
         }) ; task.resume()
     }
 
-    static func parseJSONAndInspectForError(data: Data?, response: URLResponse?, vc: CrowdismaVC?, serverError: NSError?, error err: inout Error?) -> AnyObject? {
+    fileprivate func parseJSONAndInspectForError(data: Data?, response: URLResponse?, vc: CrowdismaVC?, serverError: NSError?, error err: inout Error?) -> AnyObject? {
         guard serverError == nil else {
             err = Error.parseNSError(serverError!)
             return nil

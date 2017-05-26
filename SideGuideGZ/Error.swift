@@ -29,6 +29,9 @@ enum Error: Int {
     case judge_ENTRY_NOT_FOUND = 14
     case access_DENIED_JUDGE_ENTRY = 15
     case object_DELETED = 16
+    case already_DELETED = 17
+    case access_DENIED_REPO_ENTRY = 18
+    
     
     // Client Errors
     case could_NOT_FIND_URL_404
@@ -56,7 +59,8 @@ enum Error: Int {
     
     func getDebugDiscription() -> String {
         switch self {
-        case .unknown_ERROR: return "UNKNOWN_ERROR: There was some unknown error."
+        case .unknown_ERROR:
+            return "UNKNOWN_ERROR: There was some unknown error."
         //Server Errors
         case .token_NOT_PROVIDED:
             return "TOKEN_NOT_PROVIDED: A token was not provided with the request."
@@ -90,6 +94,10 @@ enum Error: Int {
             return "ACCESS_DENIED_JUDGE_ENTRY: The user does not have access to perform this operation."
         case .object_DELETED:
             return "OBJECT_DELETED: The object was deleted an therefore this operation cannot be performed."
+        case .already_DELETED:
+            return "ALREADY_DELETED: The object was already deleted. Another delete will fail."
+        case .access_DENIED_REPO_ENTRY:
+            return "ACCESS_DENIED_REPO_ENTRY: The user does not have access to perform this opertion on a repo entry."
         //Client Errors
         case .could_NOT_FIND_URL_404:
             return "COULD_NOT_FIND_URL_404: The url used was invalid."

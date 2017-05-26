@@ -24,4 +24,15 @@ class User: BaseObject {
         get { return (data.object(forKey: "points")! as AnyObject).intValue! }
     }
     
+    var fqRomantic: Int {
+        get { return (data.object(forKey: "fqRomantic")! as AnyObject).intValue! }
+    }
+    
+    var fqSocial: Int {
+        get { return (data.object(forKey: "fqSocial")! as AnyObject).intValue! }
+    }
+    
+    var fqProfessional: Int {
+        get { return (data.object(forKey: "fqProfessional")! as AnyObject).intValue! }
+    }    
 }

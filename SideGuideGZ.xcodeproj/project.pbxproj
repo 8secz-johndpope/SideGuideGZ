@@ -51,6 +51,32 @@
 		06F734331ED7843C005C7BC7 /* MiscUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F734321ED7843C005C7BC7 /* MiscUtils.swift */; };
 		06F734351ED78499005C7BC7 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F734341ED78499005C7BC7 /* LoginTests.swift */; };
 		06F734371ED784A6005C7BC7 /* SignUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F734361ED784A6005C7BC7 /* SignUpTests.swift */; };
+		06F734391ED792FB005C7BC7 /* UserRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F734381ED792FB005C7BC7 /* UserRoutes.swift */; };
+		06F7343B1ED793E9005C7BC7 /* UserURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F7343A1ED793E9005C7BC7 /* UserURLs.swift */; };
+		06F7343E1ED7FA09005C7BC7 /* allUserRoutesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F7343D1ED7FA09005C7BC7 /* allUserRoutesTests.swift */; };
+		06F734411ED86802005C7BC7 /* SelectorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F734401ED86802005C7BC7 /* SelectorManager.swift */; };
+		06F734471ED86875005C7BC7 /* BaseChoiceSelectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F734461ED86875005C7BC7 /* BaseChoiceSelectable.swift */; };
+		06F734491ED86A65005C7BC7 /* ChoiceSelectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F734481ED86A65005C7BC7 /* ChoiceSelectable.swift */; };
+		06F7344B1ED86AF4005C7BC7 /* QuestionSelectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F7344A1ED86AF4005C7BC7 /* QuestionSelectable.swift */; };
+		06F7344D1ED86CDA005C7BC7 /* ContextIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F7344C1ED86CDA005C7BC7 /* ContextIdentifiable.swift */; };
+		06F7344F1ED86D1F005C7BC7 /* CrowdismaContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F7344E1ED86D1F005C7BC7 /* CrowdismaContext.swift */; };
+		06F734521ED86D7D005C7BC7 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F734511ED86D7D005C7BC7 /* BaseNavigationController.swift */; };
+		06F734541ED86F9F005C7BC7 /* ChoiceSelectedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F734531ED86F9F005C7BC7 /* ChoiceSelectedLabel.swift */; };
+		06F734561ED87281005C7BC7 /* GetDefaultAnswersQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F734551ED87281005C7BC7 /* GetDefaultAnswersQuestion.swift */; };
+		06F734581ED87526005C7BC7 /* WhoAreYouProfessionalDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F734571ED87526005C7BC7 /* WhoAreYouProfessionalDefault.swift */; };
+		06F7345C1ED87584005C7BC7 /* WhoAreYouSocialDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F7345B1ED87584005C7BC7 /* WhoAreYouSocialDefault.swift */; };
+		06F7345F1ED8763E005C7BC7 /* WhoAreYouRomanticDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F7345E1ED8763E005C7BC7 /* WhoAreYouRomanticDefault.swift */; };
+		06F734611ED876A0005C7BC7 /* SelectorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F734601ED876A0005C7BC7 /* SelectorConstants.swift */; };
+		06F734631ED87AE3005C7BC7 /* MCExpandableContractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F734621ED87AE3005C7BC7 /* MCExpandableContractable.swift */; };
+		06F734651ED87B6A005C7BC7 /* MultipleChoiceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F734641ED87B6A005C7BC7 /* MultipleChoiceButton.swift */; };
+		06F734681ED87DBA005C7BC7 /* MultipleChoiceSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F734671ED87DBA005C7BC7 /* MultipleChoiceSelectionView.swift */; };
+		06F7346A1ED87DEA005C7BC7 /* SelectionViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F734691ED87DEA005C7BC7 /* SelectionViewProtocol.swift */; };
+		06F7346C1ED87E71005C7BC7 /* MultipleChoiceViewButtonConstraintExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F7346B1ED87E71005C7BC7 /* MultipleChoiceViewButtonConstraintExtension.swift */; };
+		06F7346E1ED87EB0005C7BC7 /* QuestionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F7346D1ED87EB0005C7BC7 /* QuestionLabel.swift */; };
+		06F734701ED881FB005C7BC7 /* StartQuestionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F7346F1ED881FB005C7BC7 /* StartQuestionLabel.swift */; };
+		06F734721ED88228005C7BC7 /* SelectorUserable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F734711ED88228005C7BC7 /* SelectorUserable.swift */; };
+		06F734741ED8834D005C7BC7 /* SetDefaultQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F734731ED8834D005C7BC7 /* SetDefaultQuestionsViewController.swift */; };
+		06F734761ED884E1005C7BC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F734751ED884E1005C7BC7 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +147,32 @@
 		06F734321ED7843C005C7BC7 /* MiscUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiscUtils.swift; sourceTree = "<group>"; };
 		06F734341ED78499005C7BC7 /* LoginTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 		06F734361ED784A6005C7BC7 /* SignUpTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpTests.swift; sourceTree = "<group>"; };
+		06F734381ED792FB005C7BC7 /* UserRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRoutes.swift; sourceTree = "<group>"; };
+		06F7343A1ED793E9005C7BC7 /* UserURLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserURLs.swift; sourceTree = "<group>"; };
+		06F7343D1ED7FA09005C7BC7 /* allUserRoutesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allUserRoutesTests.swift; sourceTree = "<group>"; };
+		06F734401ED86802005C7BC7 /* SelectorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectorManager.swift; sourceTree = "<group>"; };
+		06F734461ED86875005C7BC7 /* BaseChoiceSelectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseChoiceSelectable.swift; sourceTree = "<group>"; };
+		06F734481ED86A65005C7BC7 /* ChoiceSelectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceSelectable.swift; sourceTree = "<group>"; };
+		06F7344A1ED86AF4005C7BC7 /* QuestionSelectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionSelectable.swift; sourceTree = "<group>"; };
+		06F7344C1ED86CDA005C7BC7 /* ContextIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextIdentifiable.swift; sourceTree = "<group>"; };
+		06F7344E1ED86D1F005C7BC7 /* CrowdismaContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrowdismaContext.swift; sourceTree = "<group>"; };
+		06F734511ED86D7D005C7BC7 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		06F734531ED86F9F005C7BC7 /* ChoiceSelectedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceSelectedLabel.swift; sourceTree = "<group>"; };
+		06F734551ED87281005C7BC7 /* GetDefaultAnswersQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDefaultAnswersQuestion.swift; sourceTree = "<group>"; };
+		06F734571ED87526005C7BC7 /* WhoAreYouProfessionalDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhoAreYouProfessionalDefault.swift; sourceTree = "<group>"; };
+		06F7345B1ED87584005C7BC7 /* WhoAreYouSocialDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhoAreYouSocialDefault.swift; sourceTree = "<group>"; };
+		06F7345E1ED8763E005C7BC7 /* WhoAreYouRomanticDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhoAreYouRomanticDefault.swift; sourceTree = "<group>"; };
+		06F734601ED876A0005C7BC7 /* SelectorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectorConstants.swift; sourceTree = "<group>"; };
+		06F734621ED87AE3005C7BC7 /* MCExpandableContractable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCExpandableContractable.swift; sourceTree = "<group>"; };
+		06F734641ED87B6A005C7BC7 /* MultipleChoiceButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleChoiceButton.swift; sourceTree = "<group>"; };
+		06F734671ED87DBA005C7BC7 /* MultipleChoiceSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleChoiceSelectionView.swift; sourceTree = "<group>"; };
+		06F734691ED87DEA005C7BC7 /* SelectionViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionViewProtocol.swift; sourceTree = "<group>"; };
+		06F7346B1ED87E71005C7BC7 /* MultipleChoiceViewButtonConstraintExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleChoiceViewButtonConstraintExtension.swift; sourceTree = "<group>"; };
+		06F7346D1ED87EB0005C7BC7 /* QuestionLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionLabel.swift; sourceTree = "<group>"; };
+		06F7346F1ED881FB005C7BC7 /* StartQuestionLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartQuestionLabel.swift; sourceTree = "<group>"; };
+		06F734711ED88228005C7BC7 /* SelectorUserable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectorUserable.swift; sourceTree = "<group>"; };
+		06F734731ED8834D005C7BC7 /* SetDefaultQuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetDefaultQuestionsViewController.swift; sourceTree = "<group>"; };
+		06F734751ED884E1005C7BC7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +257,7 @@
 		0630F9361ED5DF45008B5739 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				06F7343F1ED867D7005C7BC7 /* Selector */,
 				0630F9381ED5E107008B5739 /* ViewControllers */,
 				0630F9391ED5E111008B5739 /* Storyboards */,
 				0630F93A1ED5E118008B5739 /* Constants */,
@@ -228,6 +281,7 @@
 		0630F9381ED5E107008B5739 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				06F734501ED86D5C005C7BC7 /* Navigation Controllers */,
 				0630F9411ED5E16A008B5739 /* Auth */,
 				0630F9401ED5E165008B5739 /* Base */,
 			);
@@ -238,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				0630F9421ED5E17A008B5739 /* Auth.storyboard */,
+				06F734751ED884E1005C7BC7 /* Main.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -250,6 +305,7 @@
 				0630F95B1ED5F7B0008B5739 /* FontConstants.swift */,
 				0630F9611ED5FE88008B5739 /* AnimationConstants.swift */,
 				0630F9741ED66F6E008B5739 /* ThreadingConstants.swift */,
+				06F734601ED876A0005C7BC7 /* SelectorConstants.swift */,
 			);
 			name = Constants;
 			sourceTree = "<group>";
@@ -280,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				0630F97C1ED672BB008B5739 /* AuthURLs.swift */,
+				06F7343A1ED793E9005C7BC7 /* UserURLs.swift */,
 				0630F9861ED67835008B5739 /* URLUsable.swift */,
 			);
 			name = URLs;
@@ -292,6 +349,8 @@
 				0630F9841ED67760008B5739 /* APIConstants.swift */,
 				0630F97A1ED6727E008B5739 /* APICompletionAliases.swift */,
 				0630F9821ED674A4008B5739 /* UserDefaults.swift */,
+				06F7344C1ED86CDA005C7BC7 /* ContextIdentifiable.swift */,
+				06F7344E1ED86D1F005C7BC7 /* CrowdismaContext.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -300,6 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				0630F9781ED67221008B5739 /* AuthRoutes.swift */,
+				06F734381ED792FB005C7BC7 /* UserRoutes.swift */,
 			);
 			name = Routes;
 			sourceTree = "<group>";
@@ -317,6 +377,7 @@
 			isa = PBXGroup;
 			children = (
 				0630F9441ED5E44C008B5739 /* SignUpLoginViewController.swift */,
+				06F734731ED8834D005C7BC7 /* SetDefaultQuestionsViewController.swift */,
 			);
 			name = Auth;
 			sourceTree = "<group>";
@@ -397,6 +458,7 @@
 		06F7342F1ED783A9005C7BC7 /* Routes */ = {
 			isa = PBXGroup;
 			children = (
+				06F7343C1ED7F9FF005C7BC7 /* User */,
 				06F734301ED783B9005C7BC7 /* Utils */,
 				06F734311ED783C3005C7BC7 /* Auth */,
 			);
@@ -418,6 +480,110 @@
 				06F734361ED784A6005C7BC7 /* SignUpTests.swift */,
 			);
 			name = Auth;
+			sourceTree = "<group>";
+		};
+		06F7343C1ED7F9FF005C7BC7 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				06F7343D1ED7FA09005C7BC7 /* allUserRoutesTests.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		06F7343F1ED867D7005C7BC7 /* Selector */ = {
+			isa = PBXGroup;
+			children = (
+				06F734401ED86802005C7BC7 /* SelectorManager.swift */,
+				06F734421ED8682B005C7BC7 /* Questions */,
+				06F734431ED86834005C7BC7 /* Choices */,
+				06F734441ED8683C005C7BC7 /* SelectorElements */,
+				06F734451ED86847005C7BC7 /* Utils */,
+				06F734661ED87DA0005C7BC7 /* MultipleChoiceView */,
+			);
+			name = Selector;
+			sourceTree = "<group>";
+		};
+		06F734421ED8682B005C7BC7 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				06F734551ED87281005C7BC7 /* GetDefaultAnswersQuestion.swift */,
+			);
+			name = Questions;
+			sourceTree = "<group>";
+		};
+		06F734431ED86834005C7BC7 /* Choices */ = {
+			isa = PBXGroup;
+			children = (
+				06F7345D1ED87632005C7BC7 /* RomanticContext */,
+				06F7345A1ED8756D005C7BC7 /* SocialContext */,
+				06F734591ED8755E005C7BC7 /* ProfessionalContext */,
+			);
+			name = Choices;
+			sourceTree = "<group>";
+		};
+		06F734441ED8683C005C7BC7 /* SelectorElements */ = {
+			isa = PBXGroup;
+			children = (
+				06F734531ED86F9F005C7BC7 /* ChoiceSelectedLabel.swift */,
+				06F734621ED87AE3005C7BC7 /* MCExpandableContractable.swift */,
+				06F734641ED87B6A005C7BC7 /* MultipleChoiceButton.swift */,
+				06F7346D1ED87EB0005C7BC7 /* QuestionLabel.swift */,
+				06F7346F1ED881FB005C7BC7 /* StartQuestionLabel.swift */,
+			);
+			name = SelectorElements;
+			sourceTree = "<group>";
+		};
+		06F734451ED86847005C7BC7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				06F734461ED86875005C7BC7 /* BaseChoiceSelectable.swift */,
+				06F734481ED86A65005C7BC7 /* ChoiceSelectable.swift */,
+				06F7344A1ED86AF4005C7BC7 /* QuestionSelectable.swift */,
+				06F734691ED87DEA005C7BC7 /* SelectionViewProtocol.swift */,
+				06F734711ED88228005C7BC7 /* SelectorUserable.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		06F734501ED86D5C005C7BC7 /* Navigation Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				06F734511ED86D7D005C7BC7 /* BaseNavigationController.swift */,
+			);
+			name = "Navigation Controllers";
+			sourceTree = "<group>";
+		};
+		06F734591ED8755E005C7BC7 /* ProfessionalContext */ = {
+			isa = PBXGroup;
+			children = (
+				06F734571ED87526005C7BC7 /* WhoAreYouProfessionalDefault.swift */,
+			);
+			name = ProfessionalContext;
+			sourceTree = "<group>";
+		};
+		06F7345A1ED8756D005C7BC7 /* SocialContext */ = {
+			isa = PBXGroup;
+			children = (
+				06F7345B1ED87584005C7BC7 /* WhoAreYouSocialDefault.swift */,
+			);
+			name = SocialContext;
+			sourceTree = "<group>";
+		};
+		06F7345D1ED87632005C7BC7 /* RomanticContext */ = {
+			isa = PBXGroup;
+			children = (
+				06F7345E1ED8763E005C7BC7 /* WhoAreYouRomanticDefault.swift */,
+			);
+			name = RomanticContext;
+			sourceTree = "<group>";
+		};
+		06F734661ED87DA0005C7BC7 /* MultipleChoiceView */ = {
+			isa = PBXGroup;
+			children = (
+				06F734671ED87DBA005C7BC7 /* MultipleChoiceSelectionView.swift */,
+				06F7346B1ED87E71005C7BC7 /* MultipleChoiceViewButtonConstraintExtension.swift */,
+			);
+			name = MultipleChoiceView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -531,6 +697,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0630F9431ED5E17A008B5739 /* Auth.storyboard in Resources */,
+				06F734761ED884E1005C7BC7 /* Main.storyboard in Resources */,
 				0630F9131ED5DDE7008B5739 /* LaunchScreen.storyboard in Resources */,
 				0630F9101ED5DDE7008B5739 /* Assets.xcassets in Resources */,
 				0630F90E1ED5DDE7008B5739 /* Main.storyboard in Resources */,
@@ -562,35 +729,59 @@
 				0630F9831ED674A4008B5739 /* UserDefaults.swift in Sources */,
 				0630F98F1ED68487008B5739 /* BaseTextField.swift in Sources */,
 				0630F9751ED66F6E008B5739 /* ThreadingConstants.swift in Sources */,
+				06F7345F1ED8763E005C7BC7 /* WhoAreYouRomanticDefault.swift in Sources */,
+				06F734471ED86875005C7BC7 /* BaseChoiceSelectable.swift in Sources */,
+				06F734391ED792FB005C7BC7 /* UserRoutes.swift in Sources */,
+				06F734701ED881FB005C7BC7 /* StartQuestionLabel.swift in Sources */,
 				0630F9621ED5FE88008B5739 /* AnimationConstants.swift in Sources */,
+				06F734651ED87B6A005C7BC7 /* MultipleChoiceButton.swift in Sources */,
+				06F7344D1ED86CDA005C7BC7 /* ContextIdentifiable.swift in Sources */,
 				0630F94A1ED5E4FF008B5739 /* CrowdismaVC.swift in Sources */,
 				0630F9451ED5E44C008B5739 /* SignUpLoginViewController.swift in Sources */,
+				06F7344F1ED86D1F005C7BC7 /* CrowdismaContext.swift in Sources */,
+				06F7346A1ED87DEA005C7BC7 /* SelectionViewProtocol.swift in Sources */,
 				0630F9661ED63A63008B5739 /* PopupExtension.swift in Sources */,
 				0630F9471ED5E482008B5739 /* BaseViewController.swift in Sources */,
 				0630F9691ED63BCF008B5739 /* BasePopup.swift in Sources */,
 				0630F9891ED68056008B5739 /* ErrorPopupView.swift in Sources */,
+				06F734681ED87DBA005C7BC7 /* MultipleChoiceSelectionView.swift in Sources */,
 				0630F97B1ED6727E008B5739 /* APICompletionAliases.swift in Sources */,
 				0630F9871ED67835008B5739 /* URLUsable.swift in Sources */,
 				0630F94C1ED5E586008B5739 /* LayoutConstants.swift in Sources */,
 				0630F97D1ED672BB008B5739 /* AuthURLs.swift in Sources */,
 				0630F90B1ED5DDE7008B5739 /* ViewController.swift in Sources */,
+				06F734561ED87281005C7BC7 /* GetDefaultAnswersQuestion.swift in Sources */,
 				0630F9811ED67315008B5739 /* RequestManager.swift in Sources */,
+				06F734411ED86802005C7BC7 /* SelectorManager.swift in Sources */,
 				0630F95A1ED5F75D008B5739 /* BaseButton.swift in Sources */,
 				0630F95C1ED5F7B0008B5739 /* FontConstants.swift in Sources */,
 				0630F9731ED654AC008B5739 /* User.swift in Sources */,
+				06F7346E1ED87EB0005C7BC7 /* QuestionLabel.swift in Sources */,
 				0630F9791ED67221008B5739 /* AuthRoutes.swift in Sources */,
+				06F734721ED88228005C7BC7 /* SelectorUserable.swift in Sources */,
 				0630F95E1ED5F9E2008B5739 /* OtherAuthOptionsButton.swift in Sources */,
+				06F7343B1ED793E9005C7BC7 /* UserURLs.swift in Sources */,
+				06F734581ED87526005C7BC7 /* WhoAreYouProfessionalDefault.swift in Sources */,
 				0630F9711ED65380008B5739 /* BaseObject.swift in Sources */,
 				0630F9541ED5EAEC008B5739 /* MoveOnButton.swift in Sources */,
 				0630F9601ED5FCCC008B5739 /* TextFieldUtilExtension.swift in Sources */,
+				06F734611ED876A0005C7BC7 /* SelectorConstants.swift in Sources */,
+				06F7344B1ED86AF4005C7BC7 /* QuestionSelectable.swift in Sources */,
 				0630F9771ED6719D008B5739 /* Error.swift in Sources */,
 				0630F94E1ED5E7FC008B5739 /* DesignConstants.swift in Sources */,
 				0630F98D1ED68379008B5739 /* GeneralTextLabel.swift in Sources */,
+				06F734631ED87AE3005C7BC7 /* MCExpandableContractable.swift in Sources */,
+				06F734491ED86A65005C7BC7 /* ChoiceSelectable.swift in Sources */,
 				0630F9641ED5FF5E008B5739 /* UtilsViewExtension.swift in Sources */,
 				0630F9581ED5F039008B5739 /* SignUpLoginTextField.swift in Sources */,
 				0630F9561ED5EF0B008B5739 /* LogoTitleLabel.swift in Sources */,
 				0630F9851ED67760008B5739 /* APIConstants.swift in Sources */,
+				06F7345C1ED87584005C7BC7 /* WhoAreYouSocialDefault.swift in Sources */,
+				06F734741ED8834D005C7BC7 /* SetDefaultQuestionsViewController.swift in Sources */,
+				06F734521ED86D7D005C7BC7 /* BaseNavigationController.swift in Sources */,
+				06F734541ED86F9F005C7BC7 /* ChoiceSelectedLabel.swift in Sources */,
 				0630F96E1ED63F1F008B5739 /* LoadingActivityIndicator.swift in Sources */,
+				06F7346C1ED87E71005C7BC7 /* MultipleChoiceViewButtonConstraintExtension.swift in Sources */,
 				0630F9091ED5DDE7008B5739 /* AppDelegate.swift in Sources */,
 				0630F96B1ED63C08008B5739 /* LoadingPopupView.swift in Sources */,
 			);
@@ -600,6 +791,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06F7343E1ED7FA09005C7BC7 /* allUserRoutesTests.swift in Sources */,
 				06F734351ED78499005C7BC7 /* LoginTests.swift in Sources */,
 				06F734371ED784A6005C7BC7 /* SignUpTests.swift in Sources */,
 				0630F91E1ED5DDE7008B5739 /* SideGuideGZTests.swift in Sources */,
